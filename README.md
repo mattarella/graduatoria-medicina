@@ -66,6 +66,7 @@ s.post('https://www.universitaly.it/index.php/login', headers=headers, cookies=c
 ```
 Non dovete modificare nessun campo dei vari dizionari.
 Tuttavia pare che il sito faccia un doppio login quindi dovremo aggiungere ancora qualche riga
+
 9. Comportiamoci come dei veri umani e visitiamo la dashboard dopo il login
 ```python
 s.get('https://www.universitaly.it/index.php/dashboard')
@@ -241,6 +242,21 @@ Lo script dovrebbe essere qualcosa del genere:
 
 # SCRIPT 2
 ```Python
+def get_table(file):
+    f = open(file, 'r', encoding='ISO-8859-1')
+    html = f.read()
+
+    soup = BeautifulSoup(html)
+    table = ''
+    for found in soup.findAll():
+        if found.name == 'table':
+            table = str(found)
+            break
+
+    f = open(file, 'w', encoding='ISO-8859-1')
+    f.write(table)
+    f.close()
+
 def clutter():
     num_pages = 398
     for i in range(1,num_pages + 1):
