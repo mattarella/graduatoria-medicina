@@ -264,13 +264,13 @@ def clutter():
 
 def cat_html():
   num_pages = 398
-    grad = open('grad.html', 'w', encoding='ISO-8859-1')
+  grad = open('grad.html', 'w', encoding='ISO-8859-1')
     for i in range(1,num_pages + 1):
         f = open(str(i) + '.html', 'r', encoding='ISO-8859-1')
         html = f.read()
         grad.write(html)
         f.close()
-    grad.close()
+  grad.close()
 
 if __name__ == '__main__':
   clutter()
