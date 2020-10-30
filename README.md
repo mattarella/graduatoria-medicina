@@ -23,12 +23,12 @@ Consigliati:
 <https://www.jetbrains.com/pycharm/>
 
 # Indice
-1. [Download delle schede](Download-delle-schede)
-2. [Estrazione della graduatoria](Estrazione-della-graduatoria)
+1. [Download delle schede](#Download-delle-schede)
+2. [Estrazione della graduatoria](#Estrazione-della-graduatoria)
 
 # SCRIPTS
-1. [SCRIPT 1](SCRIPT-1)
-2. [SCRIPT 2](SCRIPT-2)
+1. [SCRIPT 1](#SCRIPT-1)
+2. [SCRIPT 2](#SCRIPT-2)
 
 
 # Download delle schede
