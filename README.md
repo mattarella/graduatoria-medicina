@@ -242,6 +242,7 @@ Lo script dovrebbe essere qualcosa del genere:
 
 # SCRIPT 2
 ```Python
+from bs4 import BeautifulSoup  
 def get_table(file):
     f = open(file, 'r', encoding='ISO-8859-1')
     html = f.read()
